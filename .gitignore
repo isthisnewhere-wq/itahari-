@@ -1,0 +1,4 @@
+.design-tools/
+node_modules/
+artifacts/
+.env
