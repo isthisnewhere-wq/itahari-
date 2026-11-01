@@ -1,0 +1,22 @@
+import fs from 'node:fs/promises';
+import {articles} from '../src/articles.mjs';
+const clusters=[
+ ['Local Cafe','/',[
+ ['How to Choose a Cafe in Itahari'],['What to Look for When Visiting a Cafe'],['A Guide to Finding Coffee Shops in Itahari'],['What Makes a Good Cafe Experience?'],['How to Find a Cafe Menu and Prices Before Visiting','read-the-menu'],['Where to Find Bahattar Cafe in Itahari','plan-your-visit']]],
+ ['Coffee','/coffee/',[
+ ['Different Types of Espresso Coffee Explained'],["Americano vs Cappuccino: What’s the Difference?",'americano-vs-cappuccino'],['What Is a Cafe Latte?','choose-your-latte'],['Hot Coffee vs Iced Coffee'],["A Beginner’s Guide to Espresso Drinks"],['Vanilla vs Caramel vs Hazelnut Latte','choose-your-latte'],['How to Choose a Coffee Based on Your Taste','choose-your-latte'],['What Is a Cappuccino?','americano-vs-cappuccino'],['What Is an Affogato?'],['Understanding Different Coffee Add-ons','choose-your-latte']]],
+ ['Food','/food/',[
+ ['Different Types of Pizza Explained','pizza-choices'],['Chicken Pizza vs Veggie Pizza','pizza-choices'],['A Guide to Different Burger Types'],['Different Types of Momo: Steam, Jhol, Kothey and Chilli','momo-styles'],['Fried Rice Varieties Explained'],['What Is the Difference Between Sandwich Types?'],['Popular Cafe Snacks to Explore'],['What to Consider When Choosing a Cafe Meal','read-the-menu']]],
+ ['Breakfast and Refreshments','/breakfast/',[
+ ['What Is an American Breakfast?','breakfast-choices'],['French Toast vs Butter Toast','breakfast-choices'],['Different Types of Lemonade','lassi-smoothie-or-refresher'],['What Is a Virgin Mojito?'],['Different Types of Iced Tea','lassi-smoothie-or-refresher'],['A Guide to Different Smoothie Flavours','lassi-smoothie-or-refresher'],['Lassi vs Smoothie','lassi-smoothie-or-refresher'],['Hot Chocolate vs Coffee']]],
+ ['Menu and Price','/menu/',[
+ ['How to Read a Cafe Menu','read-the-menu'],['Understanding Coffee Prices','read-the-menu'],['What Food Can You Find on a Cafe Menu?','read-the-menu'],['How to Compare Cafe Menu Options','read-the-menu'],['What to Check Before Ordering at a Cafe','read-the-menu']]]
+];
+const rows=clusters.flatMap(([cluster,core,ideas])=>ideas.map(([topic,slug])=>{
+ const a=articles.find(a=>a.slug===slug);
+ return{cluster,topic,primaryCore:a?.core||core,status:a?'Consolidated into published guide':'Editorial backlog — unpublished',article:a?'/journal/'+a.slug+'/':'',category:a?.category?'/menu/#'+a.category:core==='/coffee/'?'/menu/#espresso':core==='/food/'?'/menu/#pizza':core==='/breakfast/'?'/menu/#breakfast':'/menu/',intent:a?'Answer the reader question within a substantive related guide':'Expand only when unique information is available',ownerReview:'Current prices / availability; avoid unsupported business claims'};
+}));
+const headers=Object.keys(rows[0]);
+await fs.writeFile('docs/topical-map.csv',headers.join(',')+'\n'+rows.map(row=>headers.map(h=>'"'+row[h].replaceAll('"','""')+'"').join(',')).join('\n')+'\n');
+await fs.writeFile('docs/topical-map.md','# Bahattar Cafe topical map\n\nAll 37 supplied initial ideas are accounted for below. Eight focused guides are implemented; overlapping ideas point into these guides rather than creating repetitive pages. Unpublished backlog entries have no live URLs and do not appear in navigation or the sitemap. The primary core is selected for each actual guide; an idea can move from its original cluster when the reader intent fits another core better.\n\n## Published guides\n\n'+articles.map(a=>`- ${a.title} — \`/journal/${a.slug}/\` → ${a.category?'`/menu/#'+a.category+'` → ':''}\`${a.core}\` → contact or location.`).join('\n')+'\n\n## Full editorial map\n\n| Cluster | Reader question / initial idea | Primary core | Status | Published destination | Menu category |\n|---|---|---|---|---|---|\n'+rows.map(r=>`| ${r.cluster} | ${r.topic} | ${r.primaryCore} | ${r.status} | ${r.article||'—'} | ${r.category} |`).join('\n')+'\n\n## Publishing standards\n\nEach new article needs a distinct reader question, enough useful detail, one primary core topic, natural links, and only verified café claims. Do not create pages merely to consume keyword variants. Confirm recipes / serving details before writing café-specific claims. These are candidate topics rather than measured keyword demand.\n');
+console.log(`Mapped ${rows.length} content ideas and ${articles.length} published guides.`);

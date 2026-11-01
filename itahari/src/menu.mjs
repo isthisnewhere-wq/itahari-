@@ -1,0 +1,20 @@
+export const categories = [
+  { id: 'starters', name: 'Starters', note: 'A little something to begin.', items: [['French Fries',195],['Green Salad',210],['Peri-Peri French Fries',225],['Fruits Salad',325]] },
+  { id: 'breakfast', name: 'Breakfast', note: 'For an unhurried start.', items: [['American Breakfast',525,'Brown bread, sausage, boiled or fried egg, fresh fruit, butter with jam, coffee or tea'],['French Toast',215],['Butter Toast',155],['Plain Toast',125]] },
+  { id: 'espresso', name: 'World of Espresso', note: 'Find your everyday coffee.', items: [['Espresso',120],['Doppio',130],['Lungo',140],['Americano Single',145],['Americano Double',155],['Cafe Latte',165],['Cappuccino',160],['Flavour Latte',265,'Vanilla, Caramel, Hazelnut'],['Cafe Mocha',245],['Affogato',225],['Honey Latte',275]] },
+  { id: 'coffee-add-ons', name: 'Enhance Your Coffee With', note: 'Make your cup your own.', items: [['Extra Shot of Coffee',100],['Add Flavour',100,'Vanilla, Hazelnut, Caramel'],['Scoop of Ice-Cream',100]] },
+  { id: 'refreshments', name: 'Truly Refreshing', note: 'A fresh change of pace.', items: [['Mint Lemonade',250],['Lemonade',215],['Virgin Mojito',260],['Flavour Refreshers',275,'Kiwi, Blueberry, Orange, Peach, Mango']] },
+  { id: 'alternatives', name: 'Coffee Alternatives', note: 'There is more than coffee here.', items: [['Hot Chocolate',220],['Black Tea',85],['Green Tea',95,'Pot / Glass'],['Hot Lemon Honey',170,'Lemon / Ginger'],['Blended Ice-Cream Shake',285,'Vanilla, Strawberry, Chocolate, Mix'],['Sweet Lassi or Plain Lassi',155],['Banana Lassi',175],['Iced Tea',200,'Peach, Lemon, Apple'],['Flavour Smoothies',265,'Kiwi, Strawberry, Blueberry, Mango']] },
+  { id: 'iced-coffee', name: 'Iced Coffee', note: 'Your coffee, on the cooler side.', items: [['Iced Americano',225],['Iced Cappuccino or Iced Latte',245],['Blended Iced Mocha',325],['Iced Caramel Macchiato',285],['Flavour Iced Latte',295,'Vanilla, Hazelnut, Caramel'],['Blended Cookies Frappe',335]] },
+  { id: 'pizza', name: 'Pizza', note: 'Something for the table.', items: [['Chicken Pizza',705,'Chicken, mozzarella cheese, vegetables, and pilati tomato'],['Meat Lover',795,'Bacon, grilled chicken, pork, mozzarella cheese, and pilati tomato'],['Veggie Lover',615,'Seasonal vegetables, mozzarella cheese, and pilati tomato']] },
+  { id: 'fried-rice', name: 'Fried Rice', note: 'Three ways to settle into a meal.', items: [['Veg Fried Rice',235],['Chicken Fried Rice',285],['Mix Fried Rice',385]] },
+  { id: 'hookah', name: 'Hookah', note: 'Adults only. Subject to applicable local rules and availability.', items: [['Hookah Flavour',500,'Mint, Panrash, Double Apple, Mix'],['Add Coil',50]] },
+  { id: 'noodles', name: 'Noodles', note: 'Veg, chicken, or a little of both.', items: [['Veg Noodles',175],['Chicken Noodles',210],['Mix Noodles',325]] },
+  { id: 'burgers', name: 'Burger', note: 'Pick your kind of bite.', items: [['Veg Burger',315],['Chicken Burger',395],['Grilled Chicken Burger',425,'Grilled chicken, mayo, slice of cheese, lettuce, and side fries']] },
+  { id: 'sandwiches', name: 'Sandwich', note: 'An easy choice for your next break.', items: [['Veg Sandwich',225],['Chicken Sandwich',275],['Grilled Chicken Sandwich',345]] },
+  { id: 'momo', name: 'Momo', note: 'Veg / Chicken / Pork options for every style.', items: [['Steam Momo',155,'Veg / Chicken / Pork'],['Jhol Momo',185,'Veg / Chicken / Pork'],['Deep Fry or Kothey',165,'Veg / Chicken / Pork'],['Chilli Momo',210,'Veg / Chicken / Pork']] },
+  { id: 'snacks', name: 'Snacks', note: 'A few more reasons to stay.', items: [['Paneer Chilli',285],['Hot Wings',315],['Sausage Fry or Chilli',255],['Chicken Chilli',295]] }
+];
+export const itemCount = categories.reduce((n,c) => n+c.items.length,0);
+export const hours = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'].map((day,i)=>({day,opens:'08:00',closes:i>4?'21:30':'21:00',display:i>4?'8:00 AM – 9:30 PM':'8:00 AM – 9:00 PM'}));
+export const maps = 'https://maps.google.com/maps?vet=10CAAQoqAOahcKEwioy9Lb-eaXAxUAAAAAHQAAAAAQBw..i&udm&fvr=1&pvq=Cg0vZy8xMW55MGxqMmxrIg8KCWJlc3QgY2FmZRACGAM';

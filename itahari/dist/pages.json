@@ -1,0 +1,140 @@
+[
+  {
+    "route": "/",
+    "title": "Bahattar Cafe in Itahari | Coffee, Food & a Little Pause",
+    "description": "Explore Bahattar Cafe in Itahari, Nepal. Find coffee, breakfast, food, all menu prices, opening hours, and directions.",
+    "file": "dist\\index.html"
+  },
+  {
+    "route": "/coffee/",
+    "title": "Coffee & Espresso Menu in Itahari | Bahattar Cafe",
+    "description": "Compare espresso, Americano, cappuccino, latte, mocha, iced coffee, and add-ons at Bahattar Cafe, with supplied NPR prices.",
+    "file": "dist\\coffee\\index.html"
+  },
+  {
+    "route": "/food/",
+    "title": "Food & Restaurant Menu in Itahari | Bahattar Cafe",
+    "description": "Browse Bahattar Cafe food in Itahari: pizza, burgers, momo, noodles, fried rice, sandwiches, snacks, starters, and breakfast prices.",
+    "file": "dist\\food\\index.html"
+  },
+  {
+    "route": "/breakfast/",
+    "title": "Breakfast & Refreshments in Itahari | Bahattar Cafe",
+    "description": "Discover American Breakfast, toast, lemonade, virgin mojito, smoothies, lassi, tea, and hot chocolate at Bahattar Cafe in Itahari.",
+    "file": "dist\\breakfast\\index.html"
+  },
+  {
+    "route": "/menu/",
+    "title": "Bahattar Cafe Menu & Prices | Complete Itahari Menu",
+    "description": "Search all 66 Bahattar Cafe menu items across 15 categories. See coffee, breakfast, pizza, momo, food and drinks, with all supplied NPR prices.",
+    "file": "dist\\menu\\index.html"
+  },
+  {
+    "route": "/about/",
+    "title": "About Bahattar Cafe | A Little Pause in Itahari",
+    "description": "See the atmosphere at Bahattar Cafe, Itahari. Explore authentic café photos, food and coffee options, and practical details for your visit.",
+    "file": "dist\\about\\index.html"
+  },
+  {
+    "route": "/contact/",
+    "title": "Contact Bahattar Cafe Itahari | 982-0347351",
+    "description": "Call Bahattar Cafe at 982-0347351. Find the Itahari location, supplied opening hours, and direct links to the menu and Google Maps.",
+    "file": "dist\\contact\\index.html"
+  },
+  {
+    "route": "/location/",
+    "title": "Find Bahattar Cafe in Itahari | Location & Directions",
+    "description": "Find Bahattar Cafe in Itahari, Koshi Province, Nepal. Open the supplied Google Maps listing, load a search map, or call for directions.",
+    "file": "dist\\location\\index.html"
+  },
+  {
+    "route": "/hours/",
+    "title": "Bahattar Cafe Opening Hours | Itahari, Nepal",
+    "description": "See the supplied weekly opening hours for Bahattar Cafe in Itahari: 8 AM–9 PM Sunday–Thursday and 8 AM–9:30 PM Friday–Saturday.",
+    "file": "dist\\hours\\index.html"
+  },
+  {
+    "route": "/faq/",
+    "title": "Frequently Asked Questions | Bahattar Cafe Itahari",
+    "description": "Find answers about Bahattar Cafe hours, Itahari location, menu prices, breakfast, dietary questions, and contact details.",
+    "file": "dist\\faq\\index.html"
+  },
+  {
+    "route": "/journal/",
+    "title": "The Bahattar Journal | Coffee, Food & Visiting Notes",
+    "description": "Read practical coffee comparisons, momo and pizza guides, breakfast choices, and visitor notes connected to Bahattar Cafe’s real menu.",
+    "file": "dist\\journal\\index.html"
+  },
+  {
+    "route": "/journal/americano-vs-cappuccino/",
+    "title": "Americano or cappuccino? | Bahattar Cafe Journal",
+    "description": "Two espresso drinks, two very different cups. Compare milk, texture, and the supplied Bahattar Cafe prices.",
+    "file": "dist\\journal\\americano-vs-cappuccino\\index.html"
+  },
+  {
+    "route": "/journal/choose-your-latte/",
+    "title": "Find your kind of latte. | Bahattar Cafe Journal",
+    "description": "A quick guide to Cafe Latte, Honey Latte, and the three supplied flavour options.",
+    "file": "dist\\journal\\choose-your-latte\\index.html"
+  },
+  {
+    "route": "/journal/momo-styles/",
+    "title": "Four ways to enjoy momo. | Bahattar Cafe Journal",
+    "description": "Steam, jhol, kothey, and chilli: a practical guide to choosing a momo style.",
+    "file": "dist\\journal\\momo-styles\\index.html"
+  },
+  {
+    "route": "/journal/pizza-choices/",
+    "title": "A pizza for your table. | Bahattar Cafe Journal",
+    "description": "Compare the exact ingredients and prices supplied for Chicken Pizza, Meat Lover, and Veggie Lover.",
+    "file": "dist\\journal\\pizza-choices\\index.html"
+  },
+  {
+    "route": "/journal/breakfast-choices/",
+    "title": "Your morning, your pace. | Bahattar Cafe Journal",
+    "description": "Compare the supplied American Breakfast, French Toast, Butter Toast, and Plain Toast options.",
+    "file": "dist\\journal\\breakfast-choices\\index.html"
+  },
+  {
+    "route": "/journal/lassi-smoothie-or-refresher/",
+    "title": "Something cool, please. | Bahattar Cafe Journal",
+    "description": "Lassi, smoothies, iced tea, and refreshers: find a non-coffee drink that fits your taste.",
+    "file": "dist\\journal\\lassi-smoothie-or-refresher\\index.html"
+  },
+  {
+    "route": "/journal/plan-your-visit/",
+    "title": "Make a little time for Itahari. | Bahattar Cafe Journal",
+    "description": "The practical details for visiting Bahattar Cafe: location, hours, contact, and menu.",
+    "file": "dist\\journal\\plan-your-visit\\index.html"
+  },
+  {
+    "route": "/journal/read-the-menu/",
+    "title": "A small guide to the menu. | Bahattar Cafe Journal",
+    "description": "Use category filters, compare prices in NPR, and understand flavour options and add-ons.",
+    "file": "dist\\journal\\read-the-menu\\index.html"
+  },
+  {
+    "route": "/privacy/",
+    "title": "Privacy policy | Bahattar Cafe",
+    "description": "How this information website handles data and external services.",
+    "file": "dist\\privacy\\index.html"
+  },
+  {
+    "route": "/terms/",
+    "title": "Terms of use | Bahattar Cafe",
+    "description": "Information to help you use the café’s menu and visitor pages.",
+    "file": "dist\\terms\\index.html"
+  },
+  {
+    "route": "/accessibility/",
+    "title": "Accessibility statement | Bahattar Cafe",
+    "description": "Our approach to making the café information and menu easier to use.",
+    "file": "dist\\accessibility\\index.html"
+  },
+  {
+    "route": "/404/",
+    "title": "Page Not Found | Bahattar Cafe",
+    "description": "This page could not be found. Return to Bahattar Cafe’s homepage or explore the complete menu.",
+    "file": "dist\\404.html"
+  }
+]
